@@ -6,7 +6,7 @@ describe("Brave search functionality with loop", () => {
     keywords.push("JavaScript")
     keywords.push("TyoeScript")
     keywords.push("Cypress Automation Framework")
-    
+
 
     it("Search url and verify the url contains", () => {
         cy.visit("https://search.brave.com/");
@@ -14,4 +14,4 @@ describe("Brave search functionality with loop", () => {
         cy.url().should("contain", "Cypress+Automation");
     } )
 
-})
+})// End of describe Suite
