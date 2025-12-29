@@ -20,8 +20,7 @@ describe("Brave Search Test Suite", () => {
         cy.url().then((url) => {
             currenturl = url;
             cy.log("Current URL is: " + currenturl);
-        });
-
+                });
         })// End of test 1
 
     it("click more contents and  verify additional contents are visible", () => {
@@ -31,8 +30,6 @@ describe("Brave Search Test Suite", () => {
         cy.get('[id="results"]').invoke('text').then((result) => {
             expect(result).to.contain("Cypress is a frontend test automation tool and open-source framework designed");
         });
-
-
 
     })// End of test 2
 
